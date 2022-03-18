@@ -71,7 +71,7 @@ if(score > user[0].highScore){
  * Start page will be reloaded.
  */
 function backToStart(){
-  window.location.assign("http://localhost:3000/")
+  window.location.assign("https://glacial-forest-18966.herokuapp.com/")
 }
 
 /**
@@ -81,7 +81,7 @@ function replay(){
   localStorage.removeItem(`givenAnswers`);
   localStorage.removeItem(`allQuestions`);
   localStorage.removeItem(`correctAnswers`);
-  window.location.assign("http://localhost:3000/questions")
+  window.location.assign("https://glacial-forest-18966.herokuapp.com/questions")
 }
 
 </script>

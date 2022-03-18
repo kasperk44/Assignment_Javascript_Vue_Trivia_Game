@@ -57,7 +57,7 @@ onBeforeMount(() => {
     .then(result => {
         if(result.response_code == 1){
             alert("There are not enough questions for this category and difficulty. Please try again.")
-            window.location.assign("http://localhost:3000/")
+            window.location.assign("https://glacial-forest-18966.herokuapp.com/")
         }
         else{
             const user = JSON.parse(localStorage.getItem(`user`));
