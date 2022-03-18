@@ -55,6 +55,10 @@ To get a local copy up and running follow these simple steps.
 ```sh
 git clone https://gitlab.com/ThymenH/assignment_javascript_vue_trivia_game.git
 ```
+2. Open the app in Heroku
+```sh
+https://glacial-forest-18966.herokuapp.com/
+```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
