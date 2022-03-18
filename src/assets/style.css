@@ -1,0 +1,79 @@
+.div-box{
+    position: relative;
+    width:1000px; 
+    margin-left:450px; 
+    margin-bottom:100px;
+}
+
+.div-box1{
+    position: relative;
+    float: left;
+    width:450px; 
+    margin-left:450px; 
+    margin-bottom:100px;
+}
+
+.div-box2{
+    position: relative;
+    float: left;
+    width:450px; 
+    margin-left:100px; 
+    margin-bottom:100px;
+}
+
+.in-box{
+    position: relative;
+    padding:16px;
+    background-color: lightgrey;
+    height: auto;
+}
+
+.container{
+    width: 1900px;
+}
+
+.answerButton{
+  appearance: none;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+  margin-right: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+}
+
+.answerButton:hover {
+  background-color: #F3F4F6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+.input-text{
+    width: 30%;
+    align-items: center;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
