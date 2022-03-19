@@ -21,6 +21,8 @@ let allQuestions = [];
 let givenAnswers = [];
 let correctAnswers = [];
 
+const getBasicURL = localStorage.getItem('basicURL');
+
 const router = useRouter();
 
 let iterator = 0;
@@ -57,7 +59,7 @@ onBeforeMount(() => {
     .then(result => {
         if(result.response_code == 1){
             alert("There are not enough questions for this category and difficulty. Please try again.")
-            window.location.assign("https://glacial-forest-18966.herokuapp.com/")
+            window.location.assign(getBasicURL)
         }
         else{
             const user = JSON.parse(localStorage.getItem(`user`));

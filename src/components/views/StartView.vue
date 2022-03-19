@@ -66,6 +66,7 @@ function begin() {
     else{
         attemptLogin(name.value);
         localStorage.setItem('questionsURL', getQuestionsUrl());
+        localStorage.setItem('basicURL', getCurrentWindowUrl());
         setTimeout(() => {
             router.push('/questions')
             }, 500
@@ -80,6 +81,15 @@ function getQuestionsUrl(){
     const questionsURL = `https://opentdb.com/api.php?amount=${numberOfQuestions.value}&category=${category.value}&difficulty=${difficulty.value}`;
     
     return questionsURL;
+}
+
+/**
+ * Gets the current window url.
+ */
+function getCurrentWindowUrl(){
+    const currentWindow = window.location.href;
+
+    return currentWindow;
 }
 
 </script>
