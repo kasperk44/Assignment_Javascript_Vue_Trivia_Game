@@ -36,6 +36,7 @@ const user = JSON.parse(localStorage.getItem(`user`));
 
 const allQuestions = localStorage.getItem(`allQuestions`);
 const givenAnswers = localStorage.getItem(`givenAnswers`);
+const getBasicURL = localStorage.getItem('basicURL');
 
 const tempAnswers = givenAnswers.split(',{');
 const tempQuestions = allQuestions.split(',{');
@@ -71,7 +72,7 @@ if(score > user[0].highScore){
  * Start page will be reloaded.
  */
 function backToStart(){
-  window.location.assign("https://glacial-forest-18966.herokuapp.com/")
+  window.location.assign(getBasicURL)
 }
 
 /**
@@ -81,7 +82,7 @@ function replay(){
   localStorage.removeItem(`givenAnswers`);
   localStorage.removeItem(`allQuestions`);
   localStorage.removeItem(`correctAnswers`);
-  window.location.assign("https://glacial-forest-18966.herokuapp.com/questions")
+  window.location.assign(getBasicURL + "questions")
 }
 
 </script>
